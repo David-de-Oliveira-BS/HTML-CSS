@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+   <header>
+    <h1>Meu Site</h1>
+    <span class="material-symbols-outlined" onclick="clikmenu()">Menu</span>
+    <menu id="itens">
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+    </menu>
+   </header>
+   <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia id quisquam asperiores et accusamus quo vero expedita mollitia debitis magni doloremque earum inventore corrupti, iure voluptas odio quod. Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam vitae nemo quia tempore molestias accusamus ea! Odio sit non porro nihil quisquam quasi quam commodi. Harum minima sit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum suscipit necessitatibus eum voluptatum inventore provident debitis, recusandae autem atque expedita, libero repellendus ipsa tempora eligendi eius vitae. Saepe, laudantium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia id quisquam asperiores et accusamus quo vero expedita mollitia debitis magni doloremque earum inventore corrupti, iure voluptas odio quod. Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam vitae nemo quia tempore molestias accusamus ea! Odio sit non porro nihil quisquam quasi quam commodi. Harum minima sit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum suscipit necessitatibus eum voluptatum inventore provident debitis, recusandae autem atque expedita, libero repellendus ipsa tempora eligendi eius vitae. Saepe, laudantium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia id quisquam asperiores et accusamus quo vero expedita mollitia debitis magni doloremque earum inventore corrupti, iure voluptas odio quod. Doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam vitae nemo quia tempore molestias accusamus ea! Odio sit non porro nihil quisquam quasi quam commodi. Harum minima sit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum suscipit necessitatibus eum voluptatum inventore provident debitis, recusandae autem atque expedita, libero repellendus ipsa tempora eligendi eius vitae. Saepe, laudantium.</p>
+        </article>
+   </main> 
+
+   <script>
+        function clikmenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = "block"
+            } else{
+                itens.style.display = "none"
+            }
+        }
+   </script>
+</body>
+</html>

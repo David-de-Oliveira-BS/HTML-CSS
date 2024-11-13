@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#container{
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 600px;
+}
+caption{
+    font-weight: bold;
+    font-size: 1.3em1;
+    padding: 5px;
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th.colorido, th.titulo, th.media, td.colorido{
+    background-color: rgb(77, 161, 161);
+    color: white;
+    font-weight: bold;
+}
+
+th.media{
+    text-align: left;
+}
+
+td.numero{
+    text-align: center;
+}
+
+td#media01, td#media02{
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+@charset "UTF8";
+
+/* Estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: "Esse artigo foi impresso através do site http://127.0.0.1:5500/ex026/mq01/index.html";
+}
