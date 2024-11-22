@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#container{
+    border: 1px dashed black;
+    
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside article section"
+    "footer footer footer";
+    gap: 10px;
+    grid-auto-rows: 200px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(221, 199, 241);
+}
+
+aside{
+    grid-area: aside;
+    background-color: aqua;
+}
+
+article{
+    grid-area: article;
+    background-color: aquamarine;
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(127, 219, 35);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(167, 124, 108);
+}
+
+.item{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}

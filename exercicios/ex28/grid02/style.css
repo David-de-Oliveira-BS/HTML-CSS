@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#container{
+    border: 1px dashed black;
+    
+    display: grid;
+    gap: 10px;
+    
+}
+
+header{
+    background-color: rgb(221, 199, 241);
+    grid-column: span 3;
+}
+
+aside{
+    background-color: aqua;
+    grid-column: span 2;
+}
+
+article{
+    background-color: aquamarine;
+}
+
+section{
+    background-color: rgb(127, 219, 35);
+    grid-column: span 3;
+    justify-self: center;
+}
+
+footer{
+    background-color: rgb(167, 124, 108);
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.item{
+    height: 50px;
+}
